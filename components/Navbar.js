@@ -1,33 +1,43 @@
-
+import Link from 'next/link';
 
 const Navbar = () => (
 
     <nav className="nav" id="navbar">
         <nav className="nav__container">
             <div>
-                <a href="#" className="nav__link nav__logo">
-                    <i className='bx bx-git-commit nav__icon'></i>
-                    <span className="nav__logo-name">Yweb</span>
-                </a>
+
+                <Link href="/">
+                    <a  className="nav__link nav__logo">
+                        <i className='bx bx-git-commit nav__icon'></i>
+                        <span className="nav__logo-name">Yweb</span>
+                    </a>
+                </Link>
 
                 <div className="nav__list">
                     <div className="nav__items">
                         <h3 className="nav__subtitle">Potafolio</h3>
 
-                        <a href="./src/views/nosotros.html" className="nav__link">
-                            <i className='bx bx-group nav__icon'></i>
-                            <span className="nav__name">Nosotros</span>
-                        </a>
+                        <Link href="/nosotros">
+                            <a className="nav__link">
+                                <i className='bx bx-group nav__icon'></i>
+                                <span className="nav__name">Nosotros</span>
+                            </a>
+                        </Link>
 
-                        <a href="./src/views/proyectos.html" className="nav__link">
-                            <i className='bx bx-navigation nav__icon' ></i>
-                            <span className="nav__name">Proyectos</span>
-                        </a>
+                        <Link href="/proyectos">
+                            <a className="nav__link">
+                                <i className='bx bx-navigation nav__icon' ></i>
+                                <span className="nav__name">Proyectos</span>
+                            </a>
+                        </Link>
 
-                        <a href="./src/views/holamundo.html" className="nav__link">
-                            <i className='bx bx-world nav__icon' ></i>
-                            <span className="nav__name">¡Hola mundo!</span>
-                        </a>
+                        <Link href="/holamundo">
+                            <a className="nav__link">
+                                <i className='bx bx-world nav__icon' ></i>
+                                <span className="nav__name">¡Hola mundo!</span>
+                            </a>
+                        </Link>
+
                     </div>
 
                     <div className="nav__items">

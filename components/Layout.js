@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Navbar from "./Navbar"
+import WhatsApp from "./WhatsApp";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => (
@@ -9,6 +10,7 @@ const Layout = ({ children }) => (
 
         {children}
 
+        <WhatsApp />
         <Footer />
     </>
 )
