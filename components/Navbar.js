@@ -52,11 +52,10 @@ const Navbar = () => (
 
                             <div className="nav__dropdown-collapse">
                                 <div className="nav__dropdown-content">
-                                    <a href="#" className="nav__dropdown-item">DolmenUsa</a>
-                                    <a href="#" className="nav__dropdown-item">ControlT</a>
-                                    <a href="#" className="nav__dropdown-item">Multillantas</a>
-                                    <a href="#" className="nav__dropdown-item">RecursosConfiables</a>
-
+                                    <a href="http://dolmenusa.com/" target="_blank"className="nav__dropdown-item">DolmenUsa</a>
+                                    <a href="https://controlt.com.co/" target="_blank" className="nav__dropdown-item">ControlT</a>
+                                    <a href="https://multillantascolombia.com/" target="_blank" className="nav__dropdown-item">Multillantas</a>
+                                    <a href="https://corp.recursoconfiable.com/" target="_blank" className="nav__dropdown-item">RecursosConfiables</a>
                                 </div>
                             </div>
                         </div>
