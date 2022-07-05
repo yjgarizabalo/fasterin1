@@ -18,7 +18,7 @@ const custom404 = () => (
                     <p className="yweb__description">Pagina no encontrada</p>
                     <div className="btn__content_hero">
                         <Link href="/">
-                            <a class="btn__hero">Regresar 🌎</a>
+                            <a className="btn__hero">Regresar 🌎</a>
                         </Link>
                     </div>
                 </div>
