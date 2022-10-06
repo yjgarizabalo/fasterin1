@@ -31,9 +31,7 @@ export const Login = () => {
                         defaultValue="Inciar sesión"
                         className="primary-button login-button"
                     />
-                    {/* <a href="/">¿Olvidaste la Contraseña?</a> */}
                 </form>
-                {/* <button className="secondary-button signup-button">Registrate</button> */}
             </div>
         </div>
 
