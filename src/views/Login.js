@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../img/logo_fasterin.svg';
 import Home from './Home';
+import ForgetPassword from './ForgetPassword';
 
 export const Login = () => {
     let [authMode, setAuthMode] = useState("signin")
@@ -8,6 +9,10 @@ export const Login = () => {
     const changeAuthMode = (e) => {
         e.preventDefault();
         setAuthMode(authMode === "signin" ? "home" : "signin")
+    }
+
+    const forgetPassword = (e) => {
+        setAuthMode("forgetPass")
     }
 
 
@@ -37,13 +42,13 @@ export const Login = () => {
                                 placeholder="*********"
                                 className="input input-password"
                             />
-                            <button type='submit' className="primary-button login-button">'Inciar sesión'</button>
-                            {/* <a href="/">¿Olvidaste la Contraseña?</a> */}
+                            <button type='submit' className="primary-button login-button">Inciar sesión</button>
+                            <a onClick={forgetPassword} className="pointer">¿Olvidaste la Contraseña?</a>
                         </form>
                         {/* <button className="secondary-button signup-button">Registrate</button> */}
                     </div>
                 </div>
-                ) : (<Home/>)
+                ) : authMode === "home" ? (<Home/>) : (<ForgetPassword/>)
             }
             </>
         )
