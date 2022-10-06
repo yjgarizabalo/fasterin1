@@ -16,13 +16,13 @@ export const Login = () => {
     }
 
 
-        return (
-            <>
+    return (
+        <>
             {authMode === "signin" ? (
                 <div className="login">
                     <div className="form-container">
                         <img src={logo} alt="logo" className="logo" />
-                        <img src={logo} alt="logo" style={{ paddingBottom: 40 }} />
+                        <img src={logo} alt="logo" className="logo-desktop" />
                         <form action="/" className="form" onSubmit={changeAuthMode}>
                             <label htmlFor="email" className="label">
                                 Correo Electronico
@@ -48,10 +48,10 @@ export const Login = () => {
                         {/* <button className="secondary-button signup-button">Registrate</button> */}
                     </div>
                 </div>
-                ) : authMode === "home" ? (<Home/>) : (<ForgetPassword/>)
+            ) : authMode === "home" ? (<Home />) : (<ForgetPassword />)
             }
-            </>
-        )
+        </>
+    )
 }
 
 export default Login;

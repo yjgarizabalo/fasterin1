@@ -39,11 +39,12 @@
             height: 20px;
         }
 
-        .logo {
-            width: 100px;
+        .logo-nav img {
+            width: 150px;
         }
 
         .navbar-left ul,
+        .logo-nav img,
         .navbar-right ul {
             list-style: none;
             padding: 0;
@@ -58,7 +59,7 @@
         }
 
         .navbar-left ul {
-            margin-left: 12px;
+            margin-left: 50px;
         }
 
         .navbar-left ul li a,
@@ -80,25 +81,6 @@
             color: var(--very-ligth);
             font-size: var(--sm);
             margin-right: 12px;
-        }
-
-        .navbar-shopping-cart {
-            position: relative;
-        }
-
-        .navbar-shopping-cart div {
-            width: 16px;
-            height: 16px;
-            background-color: var(--hospital-blue);
-            border-radius: 50%;
-            font-size: var(--sm);
-            font-weight: bold;
-            position: absolute;
-            top: -6px;
-            right: -3px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
 
@@ -126,20 +108,24 @@
 
 <body>
     <nav>
-        <img src="./src/assets/menu.svg" alt="menu" class="menu">
+        <img src="../../src/img/menu.svg" alt="menu" class="menu">
 
         <div class="navbar-left">
-            <img src="./src/assets/logo_fasterin.svg" alt="logo" class="logo">
+            <a href="" class="logo-nav">
+                <img src="../../src/img/logo_fasterin.svg" alt="logo">
+            </a>
+
+
 
             <ul>
                 <li>
-                    <a href="/">All</a>
+                    <a href="/">Inicio</a>
                 </li>
                 <li>
-                    <a href="/">Clothes</a>
+                    <a href="/">Categoria</a>
                 </li>
                 <li>
-                    <a href="/">Others</a>
+                    <a href="/">Nosotros</a>
                 </li>
             </ul>
         </div>
@@ -147,10 +133,6 @@
         <div class="navbar-right">
             <ul>
                 <li class="navbar-email">fasterin@ejemplo.com</li>
-                <li class="navbar-shopping-cart">
-                    <img src="./src/assets/shopping-cart-add-free-icon-font.svg" alt="shopping cart">
-                    <div>2</div>
-                </li>
             </ul>
         </div>
     </nav>
