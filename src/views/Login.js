@@ -22,7 +22,7 @@ export const Login = () => {
                 <div className="login">
                     <div className="form-container">
                         <img src={logo} alt="logo" className="logo" />
-                        <img src={logo} alt="logo" style={{ paddingBottom: 40 }} />
+                        <img src={logo} alt="logo" className="logo-desktop" />
                         <form action="/" className="form" onSubmit={changeAuthMode}>
                             <label htmlFor="email" className="label">
                                 Correo Electronico

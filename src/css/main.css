@@ -25,14 +25,26 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+}
+
+.form-container-email {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
     justify-items: center;
 }
 
 .logo {
-    width: 150px;
+    width: 190px;
     margin-bottom: 48px;
     justify-self: center;
     display: none;
+}
+
+.logo-desktop {
+    width: 220px;
+    margin-bottom: 48px;
+    justify-self: center;
 }
 
 .form {
@@ -137,11 +149,6 @@ body {
     display: inline-block;
 }
 
-@media (max-width: 640px) {
-    .logo {
-        display: block;
-    }
-}
 
 nav {
     display: flex;
@@ -159,11 +166,12 @@ nav {
     height: 20px;
 }
 
-/* .logo {
-    width: 100px;
-} */
+.logo-nav img {
+    width: 120px;
+}
 
 .navbar-left ul,
+.logo-nav img,
 .navbar-right ul {
     list-style: none;
     padding: 0;
@@ -178,7 +186,7 @@ nav {
 }
 
 .navbar-left ul {
-    margin-left: 12px;
+    margin-left: 50px;
 }
 
 .navbar-left ul li a,
@@ -200,25 +208,6 @@ nav {
     color: var(--very-ligth);
     font-size: var(--sm);
     margin-right: 12px;
-}
-
-.navbar-shopping-cart {
-    position: relative;
-}
-
-.navbar-shopping-cart div {
-    width: 16px;
-    height: 16px;
-    background-color: var(--hospital-blue);
-    border-radius: 50%;
-    font-size: var(--sm);
-    font-weight: bold;
-    position: absolute;
-    top: -6px;
-    right: -3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -265,14 +254,52 @@ nav {
     text-decoration: none;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
+}
+
+
+/* Media querys */
+
+@media (max-width: 640px) {
+    .logo {
+        display: block;
+    }
+
+    .logo-desktop {
+        display: none
+    }
+}
+
+@media (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+
+    .email-nav img {
+        margin-left: 10px;
+        transform: rotate(90deg);
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-email {
+        display: none;
+    }
 }
 
 
 @media (max-width: 640px) {
     .menu {
         display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    nav {
+        align-items: center;
     }
 
     .email-nav img {

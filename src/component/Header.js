@@ -1,36 +1,34 @@
 import React from 'react'
+import menu from '../img/menu.png'
+import logo from "../img/logo_fasterin.svg"
 
 export const Header = () => {
     return (
         <nav>
-            {/* <img src="./src/assets/menu.svg" alt="menu" className="menu" /> */}
+            <img src={menu} alt="menu" className="menu" />
             <div className="navbar-left">
-                {/* <img src="./src/assets/logo_fasterin.svg" alt="logo" className="logo" /> */}
+                <a href="" className="logo-nav">
+                    <img src={logo} alt="logo" />
+                </a>
                 <ul>
                     <li>
-                        <a href="/">Todo</a>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/">Categoria</a>
                     </li>
                     <li>
                         <a href="/">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="/">Servicios</a>
                     </li>
                 </ul>
             </div>
             <div className="navbar-right">
                 <ul>
                     <li className="navbar-email">fasterin@ejemplo.com</li>
-                    <li className="navbar-shopping-cart">
-                        <img
-                            src="./src/assets/shopping-cart-add-free-icon-font.svg"
-                            alt="shopping cart"
-                        />
-                        <div>2</div>
-                    </li>
                 </ul>
             </div>
         </nav>
+
     )
 }
 
