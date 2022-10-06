@@ -25,6 +25,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center;
 }
 
 .logo {
@@ -220,6 +221,53 @@ nav {
     align-items: center;
 }
 
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--very-light);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-image img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light);
+}
+
+.resend a {
+    color: var(--hospital-blue);
+    text-decoration: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
 
 
 @media (max-width: 640px) {
