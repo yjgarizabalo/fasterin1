@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --white: #ffffff;
     --black: #1c1c1c;
@@ -257,6 +262,37 @@ nav {
 .pointer {
     cursor: pointer;
 }
+
+/* Navbar */
+.navbar {
+    background-color: var(--text-input-field);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--very-ligth);
+}
+
+.flex {
+    display: flex;
+}
+
+.saibar {
+    width: 14rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid var(--very-ligth);
+}
+
+.saibar ul {
+    list-style: none;
+    padding: 1rem 2rem;
+}
+
+.saibar li {
+    margin-bottom: 1rem;
+}
+
+.saibar a {
+    text-decoration: none;
+}
+
 
 
 /* Media querys */

@@ -4,14 +4,13 @@ import Login from './views/Login';
 import Home from './views/Home';
 import SendMail from './views/SendMail';
 
-
 function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Login />}/>
-        <Route path='/Home' element={<Home />}/>
-        <Route path='/SendMail' element={<SendMail />}/>
+        <Route path='/' element={<Login />} />
+        <Route path='/Home' component={<Home />} />
+        <Route path='/SendMail' element={<SendMail />} />
       </Routes>
     </div>
   );
