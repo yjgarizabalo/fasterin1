@@ -6,13 +6,16 @@ export const Saibar = () => {
         <div className="saibar">
             <ul>
                 <li>
-                    <Link to="/">Inicio</Link>
+                    <Link to="/Home">Inicio</Link>
                 </li>
                 <li>
-                    <Link to="/">Trnasporte</Link>
+                    <Link to="/Transporte">Transporte</Link>
                 </li>
                 <li>
-                    <Link to="/">Nosotros</Link>
+                    <Link to="/Nosotros">Nosotros</Link>
+                </li>
+                <li>
+                    <Link to="/Login">Cerrar sesión</Link>
                 </li>
             </ul>
         </div>

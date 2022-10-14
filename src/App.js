@@ -1,19 +1,21 @@
-import './css/main.css'
-import { Route, Routes } from 'react-router-dom';
-import Login from './views/Login';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from '../src/views/Login';
 import Home from './views/Home';
-import SendMail from './views/SendMail';
+import SendMail from '../src/views/SendMail';
+import Transporte from './views/Transporte/Transporte'
+import Nosotros from './views/Nosotros/Nosotros'
+import './css/main.css'
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/Home' component={<Home />} />
-        <Route path='/SendMail' element={<SendMail />} />
-      </Routes>
-    </div>
-  );
+        <Routes>       
+          <Route path='/Login' element={<Login />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/SendMail' element={<SendMail />} />
+          <Route path='/Transporte' element={<Transporte />} />
+          <Route path='/Nosotros' element={<Nosotros />} />
+        </Routes>);
 }
 
 export default App;

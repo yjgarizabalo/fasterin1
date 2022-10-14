@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../../component/Header';
 
 export const Nosotros = () => {
     return (
-        <div>Nosotros</div>
+        <>
+            <Header />
+            <p>Nosotros</p>
+        </>
     )
 }
 export default Nosotros
