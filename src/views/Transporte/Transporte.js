@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../../component/Header';
 
 export const Transporte = () => {
     return (
-        <div>Transporte</div>
+        <>
+            <Header />
+            <p>Transporte</p>
+        </>
     )
 }
 export default Transporte
